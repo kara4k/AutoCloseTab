@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Options</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="../css/styles.css"/>
+</head>
+<body>
+<header>
+    <h1 style="text-align: center;">AutoCloseTabs</h1>
+    <table style="width: 100%; margin-top: 20px">
+        <tr>
+            <td style="width: 10%">
+                <img src="../images/options/logo.png" style="margin: 20px;" alt=""/>
+            </td>
+            <td style="text-align: left; padding-right: 40px; " >
+                <output style="font-size: 14px">AutoCloseTab - extension that allows to automatically close tabs where URL address or text on the page matches the specified patterns. As a template, you can specify both plain text (in this case, it is checked whether URL or text of the page contains it) or regular expressions. Each template is specified with a new line, without special delimiters.
+                    Blank lines are allowed between patterns to visually separate particularly long expressions. When closing a tab by page text, slight delays are possible, since to determine if text matches, it's necessary to wait until the main content of the page is loaded (not images). Good service for testing regular expressions: <a href="https://regex101.com/" target="_blank">regex101.com</a>.
+                </output>
+
+            </td>
+        </tr>
+    </table>
+</header>
+
+<table style="width: 100%; margin-top: 20px">
+    <tr>
+    <td>
+        <label for="url_patterns_area">Url patterns: </label>
+        <img src="../images/options/help20.png"
+             style="alignment: right"
+             width="20"
+             height="20"
+             title="This text area contains patterns for closing tabs by url of the page." alt=""/>
+    </td>
+    <td>
+        <label for="text_patterns_area">Text patterns: </label>
+        <img src="../images/options/help20.png"
+             style="alignment: right"
+             width="20"
+             height="20"
+             title="This text area contains patterns for closing tabs by text on the page."
+             alt="">
+    </td>
+    </tr>
+    <tr>
+        <td>
+    <textarea id="url_patterns_area"
+              style="width:90%; height: 40%; margin-top: 10px;"
+              rows="10"></textarea><br/>
+        </td>
+        <td>
+    <textarea id="text_patterns_area"
+              style="width:90%; height: 40%; margin-top: 10px;"
+              rows="10"></textarea><br/>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button id="save_btn"
+                    style="vertical-align: bottom; width: 200px; height: 50px; margin-top: 20px;
+                    background: rgba(56,56,56,0.81); color: white">Save
+            </button>
+        </td>
+    </tr>
+</table>
+<script src="../js/options.js" type="application/javascript"></script>
+</body>
+</html>

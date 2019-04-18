@@ -1,0 +1,30 @@
+label {
+    font-size: 15px;
+    font-family: "Cocogoose Classic", Arial, sans-serif;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    width: 50%;
+}
+
+tr {
+    text-align: center;
+    width: 50%;
+}
+
+textarea {
+    resize: none;
+    font-size: 14px;
+    font-family: "Cocogoose Classic", Arial, sans-serif;;
+}
+
+button {
+    font-family: "Cocogoose Classic", Arial, sans-serif;
+}
+
+output {
+    font-family: "Cocogoose Classic", Arial, sans-serif;
+}
+
